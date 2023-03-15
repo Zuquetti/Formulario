@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+    <style>
+        .BT
+        {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .BT:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        .comentarios
+        {
+            width: 99.46%;
+            height: 200px;
+            resize: nome;
+        }
+        .picole
+        {
+            border-width: 6px;
+            border-color: black;
+            border-style: double;
+        }
+        .entrega
+        {
+            border-width: 6px;
+            border-color: black;
+            border-style: double;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <fieldset class="picole"> 
+        <legend>Dados do Picolé</legend>
+        Selecione um sabor:
+            <select>
+              <option>Pimenta</option>
+              <option>Batata Doce</option>
+               <option>Cimento</option>
+            </select>
+        <br>  <br>
+        Escolha um molho especial:
+            <input type="radio" name="molhos">Ácido
+            <input type="radio" name="molhos">Enxofre líquido
+        <br>  <br>
+        Escolha a cor da embalagem:
+            <input type="checkbox">Preta &nbsp;
+            <input type="checkbox">Rosa &nbsp;
+            <input type="checkbox">Azul &nbsp;
+        <br>  <br>
+        Escolha a cor do palíto: <input type="color">
+    </fieldset>
+
+    <fieldset class="entrega">
+        <legend>Dados de entrega</legend>
+        Endereço: <input type="text">
+        <br>  <br>
+        Cidade: <input type="text">
+        <br>  <br>
+        Data de entrega: <input type="date">
+        <br>  <br>
+        Comentários: <br>
+        <textarea class="comentarios"> </textarea>
+    </fieldset>
+    <br>
+    <button class="BT">ENVIAR</button>
+    <button class="BT">CANCELAR</button>
+</body>
+</html>

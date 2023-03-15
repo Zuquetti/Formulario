@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+    <style>
+        body
+        {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: bold;
+        }
+        .form
+        {
+            background-color: white;
+            border-color: black;
+            border-style: double;
+            border-width: 6px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .field
+        {
+            width: 90%;
+            border-width: 6px;
+            border-color: black;
+            border-style: double;
+        }
+        .botoes
+        {
+            width: 95%;
+        }
+        .botao
+        {
+            border-width: 2px;
+            border-style: solid;
+        }
+        .botao:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        .texto
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        .caixa_larga
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        .estado
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <fieldset class="field">
+            <legend>Dados Pessoais</legend>
+            Nome: &nbsp; <input type="text" class="caixa_larga" id="nome"><br>  <br>
+            Endereço: &nbsp; <input type="text" class="caixa_larga" id="endereco"><br>  <br>
+            Cidade: &nbsp;<input type="text" class="caixa_larga" id="cidade"><br>  <br>
+            Estado: &nbsp; <select id="estado" class="estado">
+                <option>São Paulo</option>
+                <option>Paraná</option>
+            </select>
+
+        </fieldset>
+        <fieldset class="field">
+            <legend>Dados Profissionais</legend>
+            Natureza do cargo:<br>
+                <input type="radio" class="carcos" id="gerencia" name="cargos">Gerência &nbsp;
+                <input type="radio" class="carcos" id="financeiro" name="cargos">Financeiro &nbsp;
+                <input type="radio" class="carcos" id="recepcao" name="cargos">Recepção &nbsp;
+                <input type="radio" class="carcos" id="administrativo" name="cargos">administrativo &nbsp;
+                <input type="radio" class="carcos" id="juridico" name="cargos">Jurídico &nbsp;
+            <br>  <br>
+            Área de interesse:<br>
+                <input type="checkbox" class="areas" id="computacao">Computação &nbsp;
+                <input type="checkbox" class="areas" id="biologia">Biologia &nbsp;
+                <input type="checkbox" class="areas" id="meio_ambiente">Meio Ambiente  &nbsp;
+                <input type="checkbox" class="areas" id="engenharia">Engenharia  &nbsp;
+                <input type="checkbox" class="areas" id="historia">História &nbsp;
+            <br>  <br>
+            Mini-curriculo: &nbsp; <textarea class="texto" id="curriculo"></textarea>
+        </fieldset>
+        <br>
+        <div class="botoes">
+        <button class="botao"> Enviar </button>
+        <button class="botao"> Limpar </button>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
